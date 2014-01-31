@@ -1,47 +1,13 @@
-python-openligadb-api
-=========================
+'''
+Created on 31.01.2014
 
-This is a python wrapper class for the openligadb.de api.
+@author: Dirk Rother
+@contact: dirrot@web.de
+@license: GPL
+@version: 0.1
 
- http://www.openligadb.de/Webservices/Sportsdata.asmx
- 
-___________________________________________________
+'''
 
-**Please donate to "DQ6mBVyuboTGwS8JYW11oHwXtxsjNAzkzi"** 
-
-!["Dogecoin Donation QR-Code"](http://github.com/Dirrot/python-openligadb-api/blob/master/img/donation-qr-code.png?raw=true)
-
-___________________________________________________
- 
-_Methods_
-* info
-* getAvailGroups
-* getAvailLeagues
-* getAvailLeaguesBySports
-* getAvailSports
-* getCurrentGroup
-* getCurrentGroupOrderID
-* getGoalGettersByLeagueSaison
-* getGoalsByLeagueSaison
-* getGoalsByMatch
-* getLastChangeDateByGroupLeagueSaison
-* getLastChangeDateByLeagueSaison
-* getLastMatch
-* getLastMatchByLeagueTeam
-* getMatchByMatchID
-* getMatchdataByGroupLeagueSaison
-* getMatchdataByGroupLeagueSaisonJSON
-* getMatchdataByLeagueDateTime
-* getMatchdataByLeagueSaison
-* getMatchdataByTeams
-* getNextMatch
-* getNextMatchByLeagueTeam
-* getTeamsByLeagueSaison
-___________________________________________________
-
-Here's an example:
-
-```python
 from OpenLigaDbApi import API
 from datetime import datetime, date, time
 
@@ -138,4 +104,3 @@ if __name__ == '__main__':
     
     teamsByLeagueSaison = api.getTeamsByLeagueSaison(leagueShortcut, leagueSaison)
     print "Teams By League Saison: ", teamsByLeagueSaison
-```

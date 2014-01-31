@@ -1,0 +1,6 @@
+This api uses some python modules. Please install the needed dependencies before using this module.
+
+
+#. sudo apt-get install python-pip
+1. pip install pysimplesoap
+2. pip install suds
