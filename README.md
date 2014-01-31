@@ -7,7 +7,7 @@ This is a python wrapper class for the openligadb.de api.
  
 ___________________________________________________
 
-**Please donate to "DQ6mBVyuboTGwS8JYW11oHwXtxsjNAzkzi"** 
+**Please donate to "DQ6mBVyuboTGwS8JYW11oHwXtxsjNAzkzi" [DOGECOIN]** 
 
 !["Dogecoin Donation QR-Code"](http://github.com/Dirrot/python-openligadb-api/blob/master/img/donation-qr-code.png?raw=true)
 
