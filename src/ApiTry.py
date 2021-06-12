@@ -37,70 +37,70 @@ if __name__ == '__main__':
     api = API()
     
     info = api.info()
-    print "Info: ", info
+    print("Info: ", info)
 
     availGroups = api.getAvailGroups(leagueShortcut, leagueSaison)
-    print "Available Groups: ", availGroups
+    print("Available Groups: ", availGroups)
     
     availLeagues = api.getAvailLeagues()
-    print "Available Leagues: ", availLeagues
+    print("Available Leagues: ", availLeagues)
     
     availLeaguesBySports = api.getAvailLeaguesBySports(sportID)
-    print "Available Leagues By Sports: ", availLeaguesBySports
+    print("Available Leagues By Sports: ", availLeaguesBySports)
     
     availSports = api.getAvailSports()
-    print "Available Sports: ", availSports
+    print("Available Sports: ", availSports)
     
     currentGroup = api.getCurrentGroup(leagueShortcut)
-    print "Current Group: ", currentGroup
+    print("Current Group: ", currentGroup)
     
     currentGroupOrderID = api.getCurrentGroupOrderID(leagueShortcut)
-    print "Current Group Order ID: ", currentGroupOrderID
+    print("Current Group Order ID: ", currentGroupOrderID)
     
     goalGettersByLeagueSaison = api.getGoalGettersByLeagueSaison(leagueShortcut, leagueSaison)
-    print "Goal Getters By League Saison: ", goalGettersByLeagueSaison
+    print("Goal Getters By League Saison: ", goalGettersByLeagueSaison)
     
     goalsByLeagueSaison = api.getGoalsByLeagueSaison(leagueShortcut, leagueSaison)
-    print "Goals By League Saison: ", goalsByLeagueSaison
+    print("Goals By League Saison: ", goalsByLeagueSaison)
     
     goalsByMatch = api.getGoalsByMatch(matchID)
-    print "Goals By Match: ", goalsByMatch
+    print("Goals By Match: ", goalsByMatch)
     
     lastChangeDataByGroupLeagueSaison = api.getLastChangeDateByGroupLeagueSaison(groupOrderID, leagueShortcut, leagueSaison)
-    print "Last Change Data By Group League Saison: ", lastChangeDataByGroupLeagueSaison
+    print("Last Change Data By Group League Saison: ", lastChangeDataByGroupLeagueSaison)
     
     lastChangeDataByLeagueSaison = api.getLastChangeDateByLeagueSaison(leagueShortcut, leagueSaison)
-    print "Last Change Data By League Saison: ", lastChangeDataByLeagueSaison
+    print("Last Change Data By League Saison: ", lastChangeDataByLeagueSaison)
     
     lastMatch = api.getLastMatch(leagueShortcut)
-    print "Last Match: ", lastMatch
+    print("Last Match: ", lastMatch)
     
     lastMatchByLeagueTeam = api.getLastMatchByLeagueTeam(leagueId, teamID1)
-    print "Last Match By League Team: ", lastMatchByLeagueTeam
+    print("Last Match By League Team: ", lastMatchByLeagueTeam)
     
     matchByMatchID = api.getMatchByMatchID(matchID)
-    print "Match By MatchID: ", matchByMatchID
+    print("Match By MatchID: ", matchByMatchID)
     
     matchdataByGroupLeagueSaison = api.getMatchdataByGroupLeagueSaison(groupOrderID, leagueShortcut, leagueSaison)
-    print "Match Data By Group League Saison: ", matchdataByGroupLeagueSaison
+    print("Match Data By Group League Saison: ", matchdataByGroupLeagueSaison)
     
     matchdataByGroupLeagueSaisonJSON = api.getMatchdataByGroupLeagueSaisonJSON(groupOrderID, leagueShortcut, leagueSaison)
-    print "Match Data By Group League Saison JSON: ", matchdataByGroupLeagueSaisonJSON
+    print("Match Data By Group League Saison JSON: ", matchdataByGroupLeagueSaisonJSON)
     
     matchdataByLeagueDateTime = api.getMatchdataByLeagueDateTime(fromDateTime, toDateTime, leagueShortcut)
-    print "Match Data By League Date Time: ", matchdataByLeagueDateTime
+    print("Match Data By League Date Time: ", matchdataByLeagueDateTime)
     
     matchdataByLeagueSaison = api.getMatchdataByLeagueSaison(leagueShortcut, leagueSaison)
-    print "Match Data By League Saison: ", matchdataByLeagueSaison
+    print("Match Data By League Saison: ", matchdataByLeagueSaison)
     
     matchdataByTeams = api.getMatchdataByTeams(teamID1, teamID2)
-    print "Match Data By Teams: ", matchdataByTeams
+    print("Match Data By Teams: ", matchdataByTeams)
     
     nextMatch = api.getNextMatch(leagueShortcut)
-    print "Next Match: ", nextMatch
+    print("Next Match: ", nextMatch)
     
     nextMatchByLeagueTeam = api.getNextMatchByLeagueTeam(leagueId, teamID1)
-    print "Next Match By League Team: ", nextMatchByLeagueTeam
+    print("Next Match By League Team: ", nextMatchByLeagueTeam)
     
     teamsByLeagueSaison = api.getTeamsByLeagueSaison(leagueShortcut, leagueSaison)
-    print "Teams By League Saison: ", teamsByLeagueSaison
+    print("Teams By League Saison: ", teamsByLeagueSaison)

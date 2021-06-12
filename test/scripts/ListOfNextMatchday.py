@@ -29,14 +29,14 @@ client = suds.client.Client(URL)
 try:
     group = client.service.GetCurrentGroup(LEAGUE_NAME).groupOrderID
 except AttributeError:
-    print "n/A"
+    print("n/A")
     sys.exit(1)
 
 ## Get Match-List
 try:
     matches = client.service.GetMatchdataByGroupLeagueSaison(group, LEAGUE_NAME, LEAGUE_SAISON).Matchdata
 except AttributeError:
-    print "n/A"
+    print("n/A")
     sys.exit(1)
 
 ## iteration
@@ -45,6 +45,6 @@ for match in matches:
         goals =  "[{0}:{1}]".format(match.matchResults.matchResult[0].pointsTeam1, match.matchResults.matchResult[0].pointsTeam2)
     else:
         goals = "[N/A]"
-    print """{start_time} - {goals} - {team1} vs. {team2}""".format(team1=match.nameTeam1.encode("utf-8"),
+    print("""{start_time} - {goals} - {team1} vs. {team2}""".format(team1=match.nameTeam1.encode("utf-8"),
         team2=match.nameTeam2.encode("utf-8"), 
-        goals=goals, start_time=match.matchDateTime.strftime("%a, %H:%M Uhr"))
+        goals=goals, start_time=match.matchDateTime.strftime("%a, %H:%M Uhr")))
